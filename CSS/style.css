@@ -132,7 +132,7 @@ footer p {
 
 
 @media (max-width: 768px) {
-  nav {
+  .nav-bar {
     display: none; /* hide menu by default */
     flex-direction: column;
     width: 100%;

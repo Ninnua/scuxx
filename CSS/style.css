@@ -66,6 +66,15 @@ ul li a:hover {
 
 }
 
+.hamburger {
+  display: none;
+  font-size: 1.8rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
 .active {
  border-bottom-color: white;
  font-weight: bold;
@@ -119,4 +128,31 @@ footer p {
 	margin: 0;
 	text-align: center;
 	font-size: 14px;
+}
+
+
+@media (max-width: 768px) {
+  nav {
+    display: none; /* hide menu by default */
+    flex-direction: column;
+    width: 100%;
+    background: #333;
+    position: absolute;
+    top: 60px;
+    left: 0;
+  }
+
+  ul li {
+    text-align: center;
+    padding: 1rem 0;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  /* Show menu when active */
+  .nav-links.active {
+    display: flex;
+  }
 }

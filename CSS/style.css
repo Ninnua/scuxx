@@ -23,9 +23,6 @@ body, html {
 	height: auto;
 }
 /* Navigation bar (desktop) */
-.navigation {
-  display: none; /* hidden until scroll on mobile */
-}
 
 nav {
   position: sticky;
@@ -262,3 +259,4 @@ footer p {
   height: 100vh;
 }
 }
+
